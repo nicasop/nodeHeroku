@@ -7,6 +7,6 @@ app.route('/hola', (req, res) => {
     res.send(`<h1>PRUEBA</h1>`)
 })
 
-app.listen( process.env.Port, () => {
-    console.log(`Servidor corriendo en el puerto ${ process.env.Port }`);
+app.listen( process.env.PORT, () => {
+    console.log(`Servidor corriendo en el puerto ${ process.env.PORT }`);
 });
