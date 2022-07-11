@@ -3,6 +3,10 @@ app = express();
 
 app.use(express.static('public'))
 
+app.route('/hola', (req, res) => {
+    res.send(`<h1>PRUEBA</h1>`)
+})
+
 app.listen( puerto, () => {
     console.log(`Servidor corriendo en el puerto ${ process.env.Port }`);
 });
